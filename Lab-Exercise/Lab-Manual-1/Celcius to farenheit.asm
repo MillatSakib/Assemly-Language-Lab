@@ -1,21 +1,15 @@
-; convert celcius to farenheit
+; convert celcius to   farenheit  
 
 
 org 100h
 
-MOV BX, 1000
-MOV CX, 32
-SUB BX,CX
-
-MOV AX, 5
+MOV AX, 260    
+MOV BX,2
 MUL BX
 
-MOV CX, 9
-DIV CX
 
-MOV DX,1
-ADD AX,DX
-
+MOV BX, 32
+ADD AX,BX
 
 ; Here result are store on the AX register
 ; 
