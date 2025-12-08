@@ -1,5 +1,6 @@
 ; This is the program which will take double digit input from user and show sum of that. The limitation it can't sum the number 9+1 because of ascii value
 
+
 org 100h
 
 .data
@@ -10,6 +11,7 @@ SUM DB ?
 
 
 SPACE DB "  $"
+NEXT DB 0DH, 0AH,"$"
 INmSG DB "Please give two digit input: $"
 OUTmSG DB "Sum of two digit is: $"
 
@@ -46,8 +48,8 @@ MAIN PROC
      
      
      ;PRINT NEW LINE
-     MOV DX, 10
-     MOV AH, 02H
+     MOV AH, 09H
+     LEA DX, NEXT
      INT 21H
      
      
