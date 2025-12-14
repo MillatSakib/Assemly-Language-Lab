@@ -58,3 +58,9 @@ MOV AH,09H
 LEA DX,MSG2
 INT 21H
 ```
+
+Library for print a message:
+
+```asm
+include 'emu8086.inc' 
+```
