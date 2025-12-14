@@ -1,3 +1,5 @@
+; This program will print the given array and the result of summ of odd number and even number of the whole array.
+
 org 100h
 
 .DATA
@@ -151,3 +153,5 @@ output:
     INT 21H
               
 ret 
+
+
