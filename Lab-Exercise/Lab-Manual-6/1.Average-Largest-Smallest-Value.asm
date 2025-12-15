@@ -1,3 +1,5 @@
+; this program will take a dynamic input from user and find the average, minimum and maximum number from the arrray.
+
 include 'emu8086.inc' 
 
 ; Question
